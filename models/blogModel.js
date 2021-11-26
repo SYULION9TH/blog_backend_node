@@ -5,6 +5,8 @@ const Schema = mongoose.Schema;
 const BlogSchema = new Schema({
   title: { type: String },
   content: { type: String },
+  selectedFile: { type: String },
+  timestamp: String,
 });
 
 const Blog = mongoose.model("blog", BlogSchema);
